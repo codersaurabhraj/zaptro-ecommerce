@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Card from '../components/Card'
-import BestsellerProducts from '../data/BestsellerProducts'
+import BestSellerProducts from '../data/BestsellerProducts'
 import SearchBar from '../components/SearchBar'
 
 const Bestseller = ({ cart, setCart }) => {
