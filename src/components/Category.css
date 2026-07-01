@@ -1,0 +1,80 @@
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+
+.cate-card {
+    width: 500px;
+    height: 270px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card1 {
+    background-image:url("../assets/images/best-sellers.jpg");
+}
+
+.card2 {
+    background-image: url("../assets/images/new-arrival.jpg");
+}
+
+
+.cate-card h3 {
+    font-size: 32px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.cate-card button {
+    padding: 8px 16px;
+    font-weight: bold;
+    background-color: #0097aa;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+
+.cate-card button:hover {
+    background-color: rgb(1, 68, 1);
+    color: rgb(216, 215, 215);
+    transform: scale(1.08);
+}
+
+
+
+/* RESPONSIVE WEB DESIGN */
+
+@media (max-width:768px){
+    .category{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cate-card{
+    width: 90%;
+    height: 220px;
+}
+
+.cate-card h3{
+    font-size: 24px;
+}
+
+
+.cate-card button{
+    padding: 10px 20px;
+    font-size: 14px;
+}
+}

@@ -1,0 +1,31 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px 50px;
+}
+
+.search-input {
+    width: 350px;
+    padding: 14px 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0px -1px 5px grey;
+}
+
+/* RESPONSIVE WEB DESIGN */
+
+@media (max-width:768px) {
+    .search-container {
+        justify-content: center;
+        /* padding: 15px 20px; */
+    }
+
+    .search-input {
+        padding: 9px 18px;
+        width: 100%;
+        max-width: 350px;
+    }
+}

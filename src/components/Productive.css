@@ -1,0 +1,79 @@
+.productive {
+    background-image: url('../assets/images/productive.jpg');
+    width: 100%;
+    height: 480px;
+    background-size: cover;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.productive-content {
+    font-weight: bold;
+    padding: 45px 45px;
+    color: white;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, .7);
+}
+
+
+.productive-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+
+}
+
+.productive-content p {
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.productive-content button {
+    padding: 8px 16px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid rgb(120, 115, 115);
+    border-radius: 60px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+
+.productive-content button:hover {
+    background-color: rgb(1, 68, 1);
+    color: rgb(216, 215, 215);
+    transform: scale(1.08);
+}
+
+
+/* RESPONSIVE WEB DESIGN */
+
+@media (max-width:768px) {
+    .productive {
+        height: 380px;
+        justify-content: center;
+    }
+
+    .productive-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .productive-content h1 {
+        font-size: 2rem;
+    }
+
+    .productive-content p {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 22px;
+    }
+
+    .productive-content button {
+        padding: 10px 20px;
+    }
+}

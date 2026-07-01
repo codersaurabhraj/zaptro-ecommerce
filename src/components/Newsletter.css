@@ -1,0 +1,91 @@
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(22, 28, 44, 1);
+    padding: 20px 0px;
+}
+
+
+.newsletter-content {
+    width: 40%;
+    /* padding: 0px 45px; */
+}
+
+.newsletter-content h3 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+
+.newsletter-content p {
+    color: white;
+    font-size: 12px;
+}
+
+
+.newsletter-in {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+
+.newsletter-in input {
+    padding: 10px 20px;
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+
+.newsletter-in button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
+
+.newsletter-in button:hover {
+    background-color: rgb(1, 68, 1);
+    color: rgb(216, 215, 215);
+    transform: scale(1.08);
+}
+
+
+/* RESPONSIVE WEB DESIGN */
+
+@media(max-width:768px) {
+    .newsletter {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 20px;
+    }
+
+    .newsletter-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .newsletter-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .newsletter-in {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .newsletter-in input {
+        padding: 12px;
+    }
+
+    .newsletter-in button {
+        padding: 12px 18px;
+    }
+
+}

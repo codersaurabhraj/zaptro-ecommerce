@@ -1,0 +1,118 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #06070c;
+    color: white;
+    padding: 25px 45px;
+    gap: 30px;
+}
+
+.quicklinks,
+.customerservice,
+.followus,
+.social {
+    flex: 1;
+}
+
+.quicklinks h3,
+.customerservice h3,
+.followus h3,
+.social h3 {
+    color: #9ca3af;;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.quicklinksp,
+.customerservicep,
+.socialaddress {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.quicklinksp a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.quicklinksp a:hover{
+    color:#00BAD2;
+    transition:.3s;
+}
+
+.customerservicep p,
+.socialaddress p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.social-links {
+    display: flex;
+    gap: 18px;
+    /* margin-top:10px; */
+}
+
+.social-links a {
+    color: white;
+    font-size: 28px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #00BAD2;
+    transform: scale(1.2)
+}
+
+.copyright {
+    background: #06070c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+    font-size: 12px;
+}
+
+
+/* RESPONSIVE WEB DESIGN */
+
+@media (max-width:768px) {
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .social {
+        width: 100%;
+    }
+
+    .quicklinks h3,
+    .customerservice h3,
+    .followus h3,
+    .social h3 {
+        font-size: 11px;
+    }
+
+    .quicklinksp a,
+    .customerservicep p,
+    .socialaddress p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .social-links {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .social-links a {
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,146 @@
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0px 25px;
+    background-color: #171928;
+    border-bottom: 0.5px solid rgb(79, 75, 75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.nav-logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.nav-logo h2 {
+    width: 180px;
+    object-fit: contain;
+    display: block;
+    color: white;
+}
+
+
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    width: auto;
+}
+
+
+.nav-link i {
+    font-size: 24px;
+    color: goldenrod;
+    margin-bottom: 10px;
+}
+
+.nav-link span{
+    margin-left: 4px;
+}
+
+
+.nav-logo a,
+.nav-link a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-logo {
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.02);
+}
+
+
+.nav-link a:hover {
+    color: #00BAD2;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+
+/* RESPONSIVE CSS */
+
+@media (max-width: 994px) {
+
+    .nav-logo{
+        width: 25%;
+    }
+
+    .nav-link{
+        justify-content: flex-end;
+        gap: 18px;
+        width: auto;
+    }
+
+    .nav-link a{
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+        font-size: 32px;
+        color: white;
+        cursor: pointer;
+    }
+
+
+    .nav-link{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 50%;
+        background-color: #171928;
+        border-top: 1px solid rgba(255,255,255,.08);
+        padding: 20px;
+        opacity: 0;
+        transform: translateX(-100%);
+        pointer-events: none;
+        transition: all 0.4s ease;
+    }
+
+    .nav-link.active {
+        opacity: 1;
+        transform: translateX(0px);
+        pointer-events: auto;
+    }
+
+
+    .nav-link a{
+        font-size: 18px;
+    }
+
+    .nav-link.active a{
+    width: 100%;
+    padding: 8px 10px;
+
+}
+
+    
+}
