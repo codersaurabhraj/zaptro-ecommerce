@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Card from '../components/Card'
-import NewArrivalsProducts from '../data/NewArrivalsProducts'
+import newArrivalsProducts from '../data/NewArrivalsProducts'
 import SearchBar from '../components/SearchBar'
 
 

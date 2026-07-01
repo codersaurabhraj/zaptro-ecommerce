@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Card from '../components/Card'
-import BestSellerProducts from '../data/BestsellerProducts'
+import bestsellerProducts from '../data/BestSellerProducts'
 import SearchBar from '../components/SearchBar'
 
 const Bestseller = ({ cart, setCart }) => {
@@ -15,14 +15,6 @@ const Bestseller = ({ cart, setCart }) => {
       <SearchBar search={search} setSearch={setSearch} />
 
       <div className='card-arr'>
-
-        {/* {filterProducts.map((product) => (
-          <Card
-            key={product.id}
-            product={product}
-          />
-        ))} */}
-
 
         {filterProducts.length > 0 ? (
           filterProducts.map((product) => (
